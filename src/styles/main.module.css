@@ -8,13 +8,23 @@
     background: rgb(137, 108, 153);
 }
 
-.card {
+.alinhamento{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+   background-color: aqua;
+}
+
+.card {
+    display: flex;
+    align-items: center;/*centralizado na horizontal*/
+    justify-content: center; /*centralizado na vertical*/
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
+    height: 700px;
+    width: 400px;
+
 }
 
 .btn{

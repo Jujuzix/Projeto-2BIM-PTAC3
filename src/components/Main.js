@@ -76,7 +76,7 @@ export default function Main() {
   if (listComplete[0] == null) {
     return <Spinner />;
   }
- console.log(listProduct);
+  console.log(listProduct);
   return (
     <>
       <div className={styles.filters}>
@@ -107,11 +107,13 @@ export default function Main() {
 
       <main className={styles.main}>
         {listProduct.map((products) => (
-          <div className={styles.card} key={products.id}>
-            <h1>{products.titulo}</h1>
-            <Image width={300} height={300} src={products.image} />
-            <h3>{products.preco}</h3>
-            <p>{products.descr}</p>
+          <div className={styles.alinhamento}>
+            <div className={styles.card} key={products.id}>
+              <h1>{products.titulo}</h1>
+              <Image width={300} height={300} src={products.image} />
+              <h3>{products.preco}</h3>
+              <p>{products.descr}</p>
+            </div>
           </div>
         ))}
       </main>
