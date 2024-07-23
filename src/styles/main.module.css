@@ -1,0 +1,29 @@
+.main {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    background: rgb(137, 108, 153);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+}
+
+.btn{
+    padding: 10px 20px;
+  background-color: #5e5e5e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: end;
+  margin-left: 12px;
+}
