@@ -1,15 +1,27 @@
 /*Estilo para Modificar o Cabeçal*/
 .menu {
+<<<<<<< Updated upstream
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: #770699 0px 14px 25px, #7f2ebd 0px -12px 10px;
+}
+
+.input {
+=======
   color: aliceblue;
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color: #75064b;
-  box-shadow: #ffffff 0px 14px 25px, #7f2ebd 0px -12px 10px;
+  background-color: #37035a;
+  box-shadow: #838383 0px 14px 25px, #7f2ebd 0px -12px 10px;
 }
 
 .input {
 
+>>>>>>> Stashed changes
   background-color: #f2f2f2;
   border: 1px solid #ddd;
   padding: 8px;
