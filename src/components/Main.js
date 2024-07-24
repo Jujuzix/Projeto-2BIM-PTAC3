@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/main.module.css";
+import styles from "./styles/main.module.css";
 import { useEffect, useState } from "react";
 import Spinner from "./Spinner.js";
 import ErrorFetch from "./ErrorFetch";
+
 export default function Main() {
   const [listProduct, setListProduct] = useState([]);
   const [listComplete, setListComplet] = useState([]);
@@ -30,10 +31,7 @@ export default function Main() {
   }, []);
   const orderAz = () => {
     const listAux = [...listProduct].sort((a, b) =>
-
-
       a.titulo.localeCompare(b.titulo)
-
     );
 
     setListProduct(listAux);
@@ -121,10 +119,6 @@ export default function Main() {
               <Link href={"/product/" + products.id}>
               <button className={styles.btn}>Ver mais sobre</button>
                 </Link>
-              <h1>{products.titulo}</h1>
-              <Image width={300} height={300} src={products.image} />
-              <h3>{products.preco}</h3>
-              <p>{products.descr}</p>
             </div>
           </div>
         ))}

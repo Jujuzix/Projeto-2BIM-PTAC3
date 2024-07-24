@@ -9,7 +9,8 @@ const nextConfig = {
         "cdn-icons-png.freepik.com",
         "i.pinimg.com",
         "www.gsuplementos.com.br",
-        "cdn.awsli.com.br"]
+        "cdn.awsli.com.br",
+    "encrypted-tbn0.gstatic.com"]
     }
 
 };
