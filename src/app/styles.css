@@ -1,18 +1,8 @@
 body {
     font-family: 'Arial', sans-serif;
-<<<<<<< Updated upstream
+    background-color: #141414;
     background-color: #e490e7;
     color: #000000;
-=======
-<<<<<<< HEAD
-    background-color: #ae69c9;
-    color: #ffffff;
-=======
-    background-color: #141414;
-    color: #000000;
->>>>>>> 9624da836cfc9c0485113ca5f955dbfc633830ef
->>>>>>> Stashed changes
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }

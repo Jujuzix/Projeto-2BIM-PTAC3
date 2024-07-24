@@ -15,7 +15,7 @@ const [isError, setIsError] = useState(false);
 useEffect(() => {
     const getProduct = async () => {
     try {
-        const response = await fetch("../route");
+        const response = await fetch("http://localhost:3000/api");
         const data = await response.json();
         setListProduct(data);
         setListComplet(data);
@@ -109,12 +109,15 @@ return(
     </div>
 
     <main className={styles.main}>
-        {Product.map((listaSuplemento) => (
-        <div className={styles.card} key={listaSuplemento.id}>
-            <h1>{listaSuplemento.titulo}</h1>
-            <Image width={300} height={300} src={listaSuplemento.image} />
-            <h3>{listaSuplemento.preco}</h3>
-            <p>{listaSuplemento.descr.slice(0, 25) + "..."}</p>
+        {Product.map((products) => (
+        <div className={styles.card} key={products.id}>
+            <h1>{products.titulo}</h1>
+            <Image width={300} height={300} src={products.image} />
+            <h3>{products.preco}</h3>
+            <p>{products.descr.slice(0, 25) + "..."}</p>
+            <Link href={"/product/" + products.id}>
+            <button className={styles.btn}>Ver mais sobre</button>
+            </Link>
         </div>
         ))}
     </main>

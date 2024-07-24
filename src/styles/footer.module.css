@@ -2,11 +2,7 @@
 
 /* Estilos para o rodapé */
 .rodape {
-<<<<<<< Updated upstream
   background-color: #75064b;
-=======
-  background-color: #2a0046;
->>>>>>> Stashed changes
   color: #ffffff;
   padding: 20px;
   display: flex;
@@ -46,6 +42,6 @@
 }
 
 .img{
- border-radius: 25%;
+  border-radius: 25%;
   margin-left: 22px;
 }
