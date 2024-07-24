@@ -28,10 +28,6 @@ export default function Main() {
     };
     getProduct();
   }, []);
-    
-  
-  
-
   const orderAz = () => {
     const listAux = [...listProduct].sort((a, b) =>
 
@@ -136,4 +132,4 @@ export default function Main() {
     </>
   );
 
-
+}
