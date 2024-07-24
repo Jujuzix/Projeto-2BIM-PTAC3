@@ -31,7 +31,7 @@ export const listaSuplementos = [
     },
     {
         id: 5,
-        image: "https://www.gsuplementos.com.br/upload/produto/imagem/m_pasta-de-amendoim-sabor-beijinho-500g-growth-supplements.png",
+        image: "https://www.gsuplementos.com.br/upload/produto/imagem/m_pasta-de-amendoim-sabor-beijinho-500g-growth-supplements.webp",
         titulo: "Pasta de Amendoim Sabor Beijinho",
         descr: "SUBSTITUI UM DOCE ENERGIA PARA O TREINO FONTE NATURAL DE NUTRIENTES",
         preco: "25,20"

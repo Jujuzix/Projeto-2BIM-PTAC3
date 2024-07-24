@@ -23,7 +23,6 @@ export default function Cabecalho() {
               />
             </li>
           </Link>
-
           <Link className={styles.link} href="/contato">
             <li className={styles.li}>
             <Image
@@ -33,10 +32,7 @@ export default function Cabecalho() {
               />
             </li>
           </Link>
-
         </ul>
-        <input className={styles.input}></input>
-        <button className={styles.botao}>Adicionar um Novo Produto</button>
       </nav>
     </header>
 

@@ -29,7 +29,7 @@ export default function Main() {
 
   const orderAz = () => {
     const listAux = [...listProduct].sort((a, b) =>
-      a.title.localeCompare(b.title)
+      a.titulo.localeCompare(b.titulo)
     );
 
     setListProduct(listAux);
@@ -37,19 +37,18 @@ export default function Main() {
 
   const orderZa = () => {
     const listAux = [...listProduct].reverse((a, b) =>
-      b.title.localeCompare(a.title)
+      b.titulo.localeCompare(a.titulo)
     );
     setListProduct(listAux);
   };
 
   const orderPrecoMenor = () => {
-    const listPre = [...listProduct].sort((a, b) => a.price - b.price);
-
+    const listPre = [...listProduct].sort((a, b) => a.preco - b.preco);
     setListProduct(listPre);
   };
 
   const orderPrecoMaior = () => {
-    const listPre = [...listProduct].reverse((a, b) => b.price - a.price);
+    const listPre = [...listProduct].reverse((a, b) => b.preco - a.preco);
 
     setListProduct(listPre);
   };
@@ -62,7 +61,7 @@ export default function Main() {
       return;
     }
     const newList = listProduct.filter((product) =>
-      product.title
+      product.titulo
         .toUpperCase()
         .trim()
         .includes(textSearch.toUpperCase().trim())
@@ -109,10 +108,13 @@ export default function Main() {
         {listProduct.map((products) => (
           <div className={styles.alinhamento}>
             <div className={styles.card} key={products.id}>
-              <h1>{products.titulo}</h1>
+              <h1>{products.titulo.slice(0, 25) + "..."}</h1>
               <Image width={300} height={300} src={products.image} />
               <h3>{products.preco}</h3>
-              <p>{products.descr}</p>
+              <p>{products.descr.slice(0, 25) + "..."}</p>
+              <Link href={"/product/" + products.id}>
+              <button className={styles.btn}>Ver mais sobre</button>
+                </Link>
             </div>
           </div>
         ))}
